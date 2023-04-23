@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="device-width", initial-scale="1">
+    <style>
+      /*  body {
+        
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            
+        } 
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        /* Full-width input fields */
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: list-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        } 
+        /* new css */
+        html, body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#content_container {
+    width: 30%;
+    height: 70%;
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000;
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+    color: white;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color:white;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+
+<body >
+<!--
+<form> -->
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header">Smart fish feeder </h2>
+            </div>
+    <div id="form_content_container">
+        <div id="form_content_inner_container">
+        <h1>Login</h1>
+      <!--  <p>Please fill in this form to create an account.</p> -->
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Password" name="psw" id="psw" required>
+
+        <hr>
+        <p>By creating an account you agree to our <a href="index.html">Terms & Privacy</a>.</p>
+
+        <button type="button" id="submitData" name="submitData" class="registerbtn">Login</button>
+    </div>
+    </div>
+
+ <!--   <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div> -->
+ <!--</form> -->
+
+</body>
+</html>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut
+    } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+    import {getDatabase, set, ref, update} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDi2iO7jKWK_gMh27o2JQbRfMEEjPC3hkE",
+  authDomain: "authenticate-404a4.firebaseapp.com",
+  databaseURL: "https://authenticate-404a4-default-rtdb.firebaseio.com",
+  projectId: "authenticate-404a4",
+  storageBucket: "authenticate-404a4.appspot.com",
+  messagingSenderId: "356377111122",
+  appId: "1:356377111122:web:a599c5b577dc9561f44d8b",
+  measurementId: "G-FYJR2G0EPW"
+};
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const database = getDatabase(app);
+
+     submitData.addEventListener('click', (e) => {
+
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('psw').value;
+
+     /*   //sign up user
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // ... user.uid
+                set(ref(database, 'users/' + user.uid), {
+                    email: email,
+                    password: password
+                })
+                    .then(() => {
+                        // Data saved successfully!
+                        alert('user created successfully');
+        
+                    })
+                    .catch((error) => {
+                        // The write failed...
+                        alert(error);
+                    });
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+                alert(errorMessage);
+            });
+*/
+        // log in user
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // ...
+
+                // save log in details into real time database
+                var lgDate = new Date();
+                update(ref(database, 'users/' + user.uid), {
+                    last_login: lgDate,
+                })
+                    .then(() => {
+                        // Data saved successfully!
+                        alert('user logged in successfully');
+                         window.location.href =" https://shaun891.github.io/svs/";
+
+                    })
+                    .catch((error) => {
+                        // The write failed...
+                        alert(error);
+                    });
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+            });
+
+      //  signout user
+        signOut(auth).then(() => {
+               // Sign-out successful.
+        }).catch((error) => {
+            // An error happened.
+        });
+    });
+
+</script>
